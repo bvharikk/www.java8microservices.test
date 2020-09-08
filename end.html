@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test Result Page - Send email to HR</title>
+   <link rel="stylesheet" href="app.css" />
+	<script src="jquery.min.js"></script>
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	   <script type = "text/javascript" src ="aes.js"></script>
+   </head>
+  <body oncontextmenu="mouseclick(this, event)">
+    <div class="container">
+      <div id="end" class="flex-center flex-column">	  
+       <h2 font="red"> Java Microservices Test Result in Percentage</h2>
+	   <h3 id="emailId"></h3>
+        <h3>Percentage </h3> <h3 id="finalScore"></h3> 
+		<h3 id="finalResult"></h3>
+		<h3 id="dateOfTest"></h3>
+		 
+        </form>
+ 		 <button
+            type="Button"
+            class="btn"
+            id="closeBtn"
+            onclick="return sendEmailClose(document.body);"
+          >
+          Send Result Email and Close
+          </button>
+		  
+      </div>
+    </div>
+    <script src="end.js"></script>
+	 
+  </body>
+</html>

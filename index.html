@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="app.css" />
+	<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+	<script src="jquery.min.js"></script>
+	
+  </head>
+  <body oncontextmenu="mouseclick(this, event)">
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+	  
+	  
+        <h1>Java and Microservices Test</h1>
+		<h4>Read Important Test Instructions:</h4>
+		<h4>1)This test runs only on Desktop/Laptop on Windows/Mac,with Chrome Browser ONLY and with 1280x720+ resolution.</h4>
+		<h4>2)Contact HR for this test credentials, this test consists of 50 multiple choice questions and a answer needs to be clicked.</h4>
+		<h4>3)Duration is for 30 minutes , 70 Percentage pass mark and during the test,if you SWITCH away to another window,malpractice attempt will be assumed,test will be auto redirect to results page.</h4>
+		<h4>4)Credentials given are valid only for 24 hours from the time you received the email from HR.</h4>
+		<form>
+          <input
+            type="text"
+            name="emailidText" autocomplete="off"
+            id="emailidText" maxlength="55" size="0"
+            placeholder="Enter Candidate's Email Id"
+          />
+		  <input
+            type="text"
+            name="keyText" autocomplete="off"
+            id="keyText" maxlength="250" size="70"
+            placeholder="Copy & Paste Exam Key from Email sent from HR"
+          />
+          <button
+            type="Button"
+            class="btn"
+            id="loginBtn"
+            onclick="return crypt(document.body);"
+          >
+          Login to Start the Test
+          </button>
+        </form>
+		<!--
+        <a class="btn" href="game.html">Start and Dont refresh the page</a>
+        -->
+		
+      </div>
+    </div>
+	<script src="aes.js"></script>
+	<script src="login.js"></script>
+	
+  </body>
+</html>
